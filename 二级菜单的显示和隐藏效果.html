@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>文章列表动态显示效果</title>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+         
+    .show{
+        width: 90px;
+        background: black;
+        position: relative;
+    }
+    .code{
+        width: 90px;
+        background: black;
+        border-top: 1px dotted white;
+        position: absolute;
+        display:none;
+        left: 90px;
+        top: 0;    
+        color:white;
+    }
+     
+     ul>li {
+            border-top: 1px dotted white;
+            list-style: none;
+            line-height:35px;
+            text-align: center;
+        }   
+ 
+    li>a{
+           color:white;
+            text-decoration: none;
+            text-align: center;
+            /* 去掉链接元素文本内容的下划线 */
+        }
+        .show>ul>li:hover div {
+        display: block;
+}
+        
+        
+</style>
+</head>
+<body>
+        <div class="show">
+        <ul>
+            <li>
+            <a href="#">后端开发</a>
+            <div class="code">
+             <ul>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>SpringMVC</li>
+                <li>SpringBoot</li>
+            </ul>
+            </div>
+            </li>
+            <li>
+            <a href="#">前端开发</a>
+            <div class="code">
+            <ul>
+                <li>JavaScript</li>
+                <li>WEXX</li>
+                <li>Ajax</li>
+            </ul>
+            </div>
+            </li> 
+            <li>
+            <a href="#">移动开发</a>
+            <div  class="code">
+            <ul>
+                <li>Android</li>
+                <li>IOS</li>
+                <li>WEXX</li>
+                <li>Ajax</li>
+            </ul>
+            </div>
+            </li>
+            <li>
+            <a href="#">算法/数学</a>
+            <div  class="code">
+              <ul>
+                <li>算法与数据结构</li>
+                <li>算法</li>
+                <li>数学</li>
+            </ul>
+            </div>
+            </li>
+            <li>
+            <a href="#">运维测试</a>
+            <div  class="code">
+              <ul>
+                <li>自动化运维</li>
+                <li>运维工具</li>
+                <li>运维</li>
+                <li>Linux</li>
+            </ul>
+            </div>
+            </li>
+        </ul>
+        </div>
+</body>
+</html>
